@@ -13,7 +13,7 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order.
 
 */
-public class Hashing_12 {
+public class Hashing_12_Two_Sum {
     
     public static void main(String[] args) {
         int arr[] = {2,7,11,15}, target = 22;

@@ -6,7 +6,7 @@ package Hashing;
 Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 */
 
-public class Hashing_10 {
+public class Hashing_10_Valid_Anagrams {
     public static void main(String[] args) {
         String s = "anagram",t = "nagaram";
         boolean val = checkAnagram(s,t);

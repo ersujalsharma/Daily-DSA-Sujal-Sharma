@@ -7,7 +7,7 @@ import java.util.HashMap;
 11. Frequency of an Element in Given Array
 
 */
-public class Hashing_11 {
+public class Hashing_11_Frequency_Of_Element {
     
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 3, 2, 1}, x=2;
