@@ -1,9 +1,9 @@
 /**
  * Hashing_25
  * 
- * 
+ * Maximum sum of two Not Overlapping SubArrays with given length
  */
-public class Hashing_25 {
+public class Hashing_25_Not_OverLapping_SubArrays {
 
     public static void main(String[] args) {
         int nums[] = {0,6,5,2,2,5,1,9,4}, firstLen = 1, secondLen = 2;
