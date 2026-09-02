@@ -24,11 +24,7 @@ public class Hashing_29_Amazon_OA_Deliver_in_minimal {
         int count = 0;
         for(int i : hashmap.values()){
             if(i==1) return -1;
-            if(i==2){
-                count++;
-            }
-            else
-                count += i/3 + (i%3==1?1:0);
+            count += i/3 + i%3;
         }
         return count;
     }
