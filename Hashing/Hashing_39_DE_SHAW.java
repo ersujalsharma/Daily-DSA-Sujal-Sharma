@@ -25,12 +25,6 @@ public class Hashing_39_DE_SHAW {
         for(int i : arr){
             hashmap.put(i,hashmap.getOrDefault(i, 0)+1);
         }
-        for(int i : hashmap.keySet()){
-            count += hashmap.getOrDefault(-sumVal/2,0);
-            count += hashmap.getOrDefault(sumVal/2,0);
-            // count += hashmap.getOrDefault(sumVal-(2*i),0);
-            // count += hashmap.getOrDefault(sumVal+(2*i),0);
-        }
-        return count/2;
+        return count;
     }
 }
