@@ -13,20 +13,20 @@ public class Hashing_44_Nutanix_OA {
         int ab[] = new int[a.length * b.length];
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < b.length; j++) {
-                ab[(i * a.length) + j] = a[i] + b[j];
+                ab[(i * b.length) + j] = a[i] + b[j];
             }
         }
         int abe[] = new int[ab.length * e.length];
         for (int i = 0; i < ab.length; i++) {
             for (int j = 0; j < e.length; j++) {
-                abe[(i * ab.length) + j] = ab[i] + e[j];
+                abe[(i * e.length) + j] = ab[i] + e[j];
             }
         }
         HashMap<Integer, Integer> hashmap = new HashMap<>();
         int cd[] = new int[c.length * d.length];
         for (int i = 0; i < c.length; i++) {
             for (int j = 0; j < d.length; j++) {
-                cd[(i * c.length) + j] = c[i] + d[j];
+                cd[(i * d.length) + j] = c[i] + d[j];
                 hashmap.put(c[i] + d[j], hashmap.getOrDefault(c[i] + d[j], 0) + 1);
             }
         }
