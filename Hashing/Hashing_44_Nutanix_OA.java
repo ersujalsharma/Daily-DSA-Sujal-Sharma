@@ -1,5 +1,29 @@
 package Hashing;
 
+/*
+
+Given 5 arrays :- A,B,C,D,E  all of size “N”
+
+Element in the array can range from [-10^9……….10^9]
+
+Find the number of tuplets (i,j,k,l,m) such that  -
+
+a[i] + b[j] + c[k] + d[l] + e[m] = 0
+
+A = [2 5]
+B = [3 8]
+C = [-5 8]
+D = [5 10]
+E = [-10 100]
+
+AB[5,10,8,13]
+CD[0,5,13,18]
+ABCD[5,10,18,23,10,15,23,28,8,13,21,26,13,18,26,31]
+[E] -> [-10,100]
+[-5,0,8,13,0,5,13,18,-2,3,11,16,3,8,16,21,105,110,118,123,110,115,123,128,18,113,121,126,113,118,126,131]
+
+*/
+
 import java.util.HashMap;
 
 public class Hashing_44_Nutanix_OA {
