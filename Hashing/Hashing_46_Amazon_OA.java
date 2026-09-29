@@ -23,18 +23,23 @@ public class Hashing_46_Amazon_OA {
         int k = 3;
         int leftMin[] = new int[arr.length];
         Arrays.fill(leftMin, Integer.MAX_VALUE);
-        leftMin[0] = Integer.MAX_VALUE;
         for(int i=1;i<arr.length;i++){
-            leftMin[i] = Math.min(arr[i-1],leftMin[i-1]);
+            leftMin[i] = Math.min(arr[i-1]<arr[i]?arr[i-1]:Integer.MAX_VALUE,leftMin[i-1]);
         }
-        int rightMax = arr.length-1;
+        System.out.println(Arrays.toString(leftMin));
+        int rightMax = arr[arr.length-1];
         for(int i=arr.length-2;i>=0;i--){
-            leftMin[i] = rightMax-leftMin[i];
-            rightMax = Math.max(rightMax,arr[i]);
+            if(arr[i]!=Integer.MAX_VALUE && arr[i]<rightMax){
+                leftMin[i] = rightMax-leftMin[i];
+                rightMax = Math.max(rightMax,arr[i]);
+            }
+            else{
+                leftMin[i] = Integer.MAX_VALUE;
+            }
         }
         boolean flag = false;
-        for(int i=1;i<arr.length-1;i++){
-            if(arr[i]>0) flag = true;
+        for(int i=0;i<arr.length-1;i++){
+            if(arr[i]>0 && arr[i]!=Integer.MAX_VALUE) flag = true;
         }
         System.out.println(
         Arrays.toString(leftMin)
